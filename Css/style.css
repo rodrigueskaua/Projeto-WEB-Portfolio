@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Menu */
+#Nav{
+    background: #3d3d3d;
+    padding: 15px 0px;
+    color: rgb(0, 121, 228);
+
+}
+    
+#title{
+    color: rgba(0, 0, 0, 0.404);
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10%;
+
+}
+
+#menuItens {
+    padding-right: 15%;
+
+}
+#menuItens li{
+    margin-right: 5%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Sobre {
+    padding: 60px 0px ;
+    background-color: azure;
+           
+}
+.sec1 img{
+    width: 20%;
+}
+.sec1 h2{
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+/* #habilidades {
+    display: grid;
+    place-items: center;
+    background-color: red;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+.titulo-barra {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-barra h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+
+.progresso {
+    height: 20px;
+    background: #3d3d3d;
+    border-radius: 20px;
+    border:  1px solid white;
+    box-shadow:  0 2px 2px #4f4c4c;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progresso .progresso-barra {
+    border-radius: 20px;
+    border:  1px solid white;
+    box-shadow:  0 2px 2px #4f4c4c;
+    margin-bottom: 40px;
+    overflow: visible;
+     */
+
+/* Testando animações */
+/* .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 206, 206);
+}
+.linha {
+    color: #000;
+    border-right: 3px solid black;
+    font-family: monospace;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.digitando {
+    animation: Cursor 800ms steps(20) infinite normal, digitando_teste 2s steps(20) 1s normal both;
+}
+
+@keyframes digitando_teste {
+    from {
+        width: 0em;
+    }
+    
+    to {
+        width: 6.5em;
+    }
+}
+@keyframes Cursor{
+    from {
+        border-right-color: rgb(255, 255, 255)
+    }
+    to {
+        border-right-color:  transparent;
+    }
+} */
