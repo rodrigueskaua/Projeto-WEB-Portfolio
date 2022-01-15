@@ -1,5 +1,4 @@
 /* Menu */
-
 .menuNav  ul li a {
     opacity: 0.6;
     font-weight: 300;
@@ -18,7 +17,7 @@
    content: '';
    width: 0px;
    height:  3px;
-   background: #8A2BE2	;
+   background: #4834d4	;
    position: absolute;
    top: 120%;
    left: 0;
@@ -27,7 +26,6 @@
 }
 
 .menuNav ul li a:after {
-
    content: '';
    width: 0px;
    height:  3px;
@@ -67,34 +65,50 @@
     left: 0;
     top: 0;
     transition: .4s linear;
-
-
 }
 
 .iconeteste a:hover {
     transform: scale(.8);
-
-
-
 }
 
 .iconeteste a:hover::before {
     border-left:  4px solid;
     border-right: 4px solid;    
     transform:  skewX(30deg);
-
-
 }
 
 .iconeteste a:hover::after {
     border-top:  4px solid;
     border-bottom: 4px solid;    
     transform:  skewY(-30deg);
-
-
 }
 
+/* Skills */
+.barra:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 207, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+}
 
+.html {width: 65%; animation: html 5s}
+.css {width: 50%; animation: css 4s}
+.python {width: 55%; animation: python 3s;}
+.js {width: 10%; animation: js 2s}
+
+@keyframes html {
+    0%{width: 0%}
+    100%{width: 65%}
+}
+@keyframes css {
+    0%{width: 0%}
+    100%{width: 50%}
+}
+@keyframes python {
+    0%{width: 0%}
+    100%{width: 55%}
+}
+@keyframes js {
+    0%{width: 0%}
+    100%{width: 10%}
+}
 
 /* Menu aberto */
 @media screen  and (max-width: 990px){
