@@ -10,14 +10,13 @@
 
 /* Menu */
 #Nav{
-    background: #3d3d3d;
+    background: #ffffff;
     padding: 15px 0px;
-    color: rgb(0, 121, 228);
 
 }
     
 #title{
-    color: rgba(0, 0, 0, 0.404);
+    color: #6D9BA6;
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     font-weight: bold;
@@ -37,7 +36,7 @@
 
 #Sobre {
     padding: 60px 0px ;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.534);
            
 }
 .sec1 img{
@@ -48,81 +47,60 @@
     font-size: 35px;
 }
 
-/* #habilidades {
-    display: grid;
-    place-items: center;
-    background-color: red;
-    font-family: 'Lato', sans-serif;
-    width: 100%;
-}
 
-.titulo-barra {
-    width: 100%;
-    height: auto;
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-
-.titulo-barra h3{
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-    margin: 0 0 20px;
-}
-
-.progresso {
-    height: 20px;
-    background: #3d3d3d;
-    border-radius: 20px;
-    border:  1px solid white;
-    box-shadow:  0 2px 2px #4f4c4c;
-    margin-bottom: 40px;
-    overflow: visible;
+.icones a{
+    display: inline-block;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #000000;
+    margin: 0 16px;
+    transition: .4s linear;
     position: relative;
 }
-.progresso .progresso-barra {
-    border-radius: 20px;
-    border:  1px solid white;
-    box-shadow:  0 2px 2px #4f4c4c;
-    margin-bottom: 40px;
-    overflow: visible;
-     */
 
-/* Testando animações */
-/* .container1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(179, 206, 206);
-}
-.linha {
-    color: #000;
-    border-right: 3px solid black;
-    font-family: monospace;
-    font-size: 3em;
-    text-align: center;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
+.icones a::before, .icones a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+
 
 }
 
-.digitando {
-    animation: Cursor 800ms steps(20) infinite normal, digitando_teste 2s steps(20) 1s normal both;
+
+.icones a:hover {
+    transform: scale(.8);
+
+
+
 }
 
-@keyframes digitando_teste {
-    from {
-        width: 0em;
-    }
-    
-    to {
-        width: 6.5em;
-    }
+.icones a:hover::before {
+    border-left:  4px solid;
+    border-right: 4px solid;    
+    transform:  skewX(30deg);
+
+
 }
-@keyframes Cursor{
-    from {
-        border-right-color: rgb(255, 255, 255)
-    }
-    to {
-        border-right-color:  transparent;
-    }
-} */
+
+.icones a:hover::after {
+    border-top:  4px solid;
+    border-bottom: 4px solid;    
+    transform:  skewY(-30deg);
+
+
+}
