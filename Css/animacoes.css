@@ -1,4 +1,10 @@
 /* Menu */
+
+#title:hover{
+    color: #000000;
+    transition: 0.5s;
+
+}
 .menuNav  ul li a {
     opacity: 0.6;
     font-weight: 300;
@@ -56,42 +62,42 @@
   }
 
 /* Icones */
-.iconeteste a::before, .icones a::after{
-    content: '';
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transition: .4s linear;
+
+
+/* Efeito de digitação SECTION 1 */
+
+.digitando {
+    animation: Cursor 500ms steps(25) infinite normal, escrevendo 3s steps(25) 1s normal both;
 }
 
-.iconeteste a:hover {
-    transform: scale(.8);
+@keyframes escrevendo {
+    from {
+        width: 0em;
+    }
+    
+    to {
+        width: 13.3em;
+    }
+}
+@keyframes Cursor{
+    from {
+        border-right-color: rgb(0, 0, 0)
+    }
+    to {
+        border-right-color:  transparent;
+    }
 }
 
-.iconeteste a:hover::before {
-    border-left:  4px solid;
-    border-right: 4px solid;    
-    transform:  skewX(30deg);
-}
-
-.iconeteste a:hover::after {
-    border-top:  4px solid;
-    border-bottom: 4px solid;    
-    transform:  skewY(-30deg);
-}
 
 /* Skills */
 .barra:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 207, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) ;
 }
 
-.html {width: 65%; animation: html 5s}
+.html {width: 65%; animation: html 4s}
 .css {width: 50%; animation: css 4s}
-.python {width: 55%; animation: python 3s;}
-.js {width: 10%; animation: js 2s}
+.python {width: 55%; animation: python 4s;}
+.js {width: 10%; animation: js 4s}
 
 @keyframes html {
     0%{width: 0%}
