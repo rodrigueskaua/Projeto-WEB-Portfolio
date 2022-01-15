@@ -50,7 +50,7 @@
 }
 
 
-
+/* Menu aberto */
 @media screen  and (max-width: 990px){
     #menuItens{
         text-align: center;
@@ -67,5 +67,44 @@
         display: inline-block;
     }
 
-    
 }
+
+
+/* Icones */
+.icones a::before, .icones a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+
+
+}
+
+.icones a:hover {
+    transform: scale(.8);
+
+
+
+}
+
+.icones a:hover::before {
+    border-left:  4px solid;
+    border-right: 4px solid;    
+    transform:  skewX(30deg);
+
+
+}
+
+.icones a:hover::after {
+    border-top:  4px solid;
+    border-bottom: 4px solid;    
+    transform:  skewY(-30deg);
+
+
+}
+
+
