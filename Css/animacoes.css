@@ -49,27 +49,13 @@
     transform: translateX(-100%); 
 }
 
+/* Icones Menu Contatos*/
 
-
-/* Menu aberto */
-@media screen  and (max-width: 990px){
-    #menuItens{
-        text-align: center;
-        padding-left: 15%;
-        margin-left: 5%;
-
-    }
-
-    .menuNav  ul li{
-        padding: 7px 0px;
-    }
-
-    .menuNav  ul li a{
-        display: inline-block;
-    }
-
-}
-
+.icones li a i:hover {
+    background-color: #4834d4;
+    color: #ffffff;
+    transition: 0.5s;
+  }
 
 /* Icones */
 .iconeteste a::before, .icones a::after{
@@ -109,3 +95,29 @@
 }
 
 
+
+/* Menu aberto */
+@media screen  and (max-width: 990px){
+    #menuItens{
+        text-align: center;
+        padding-left: 15%;
+        margin-left: 5%;
+
+    }
+    .menuNav  ul li{
+        padding: 7px 0px;
+    }
+
+    .menuNav  ul li a{
+        display: inline;
+    }
+
+    .icones {   
+        text-align: center;
+    }
+
+    .icones li{   
+        margin: 20px;
+    }
+
+}
