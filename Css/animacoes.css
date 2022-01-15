@@ -50,6 +50,7 @@
 }
 
 
+
 /* Menu aberto */
 @media screen  and (max-width: 990px){
     #menuItens{
@@ -71,7 +72,7 @@
 
 
 /* Icones */
-.icones a::before, .icones a::after{
+.iconeteste a::before, .icones a::after{
     content: '';
     position: absolute;
     box-sizing: border-box;
@@ -84,14 +85,14 @@
 
 }
 
-.icones a:hover {
+.iconeteste a:hover {
     transform: scale(.8);
 
 
 
 }
 
-.icones a:hover::before {
+.iconeteste a:hover::before {
     border-left:  4px solid;
     border-right: 4px solid;    
     transform:  skewX(30deg);
@@ -99,7 +100,7 @@
 
 }
 
-.icones a:hover::after {
+.iconeteste a:hover::after {
     border-top:  4px solid;
     border-bottom: 4px solid;    
     transform:  skewY(-30deg);
