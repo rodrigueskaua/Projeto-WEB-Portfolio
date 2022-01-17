@@ -1,0 +1,47 @@
+/* Menu aberto */
+@media screen  and (max-width: 990px){
+    #menuItens{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+    }
+    .menuNav  ul li{
+        padding: 10px 0px;
+    }
+
+    .menuNav  ul li a{
+        display: inline;
+    }
+
+    .icones {
+        text-align: center;
+    }
+
+    .icones li{   
+        margin: -20px 10px;
+    }
+
+    @keyframes escrevendo {
+        from {
+            width: 0em;
+        }
+        
+        to {
+            width: 15.3em;
+        }
+    }
+
+    .skills {
+        width: 70%;
+        margin: 60px auto;
+        color: #000000;
+        padding: 20px;
+        box-shadow: 0 14px 28px rgba(0, 0, 207, 0.294), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+    }
+
+    .contato{
+        padding-top: 100px;
+        text-align: center;
+    }
+}

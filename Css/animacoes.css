@@ -116,49 +116,13 @@
     100%{width: 10%}
 }
 
-/* Menu aberto */
-@media screen  and (max-width: 990px){
-    #menuItens{
-        text-align: center;
-        padding-left: 15%;
-        margin-left: 5%;
-
-    }
-    .menuNav  ul li{
-        padding: 7px 0px;
-    }
-
-    .menuNav  ul li a{
-        display: inline;
-    }
-
-    .icones {   
-        text-align: center;
-    }
-
-    .icones li{   
-        margin: -20px 10px;
-    }
-
-    @keyframes escrevendo {
-        from {
-            width: 0em;
-        }
-        
-        to {
-            width: 15.3em;
-        }
-
-}
-
-
 .btnform:hover {
     transition: 1s;
     padding: 10px 40px;
     background: linear-gradient(90deg, rgb(103, 106, 252)0%, rgb(236, 0, 185)100%);
     color: #ffffff;
 
-}}
+}
 
 
 .iconeSkills:hover{
